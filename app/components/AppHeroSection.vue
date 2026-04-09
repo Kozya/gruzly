@@ -36,7 +36,7 @@
         </div>
 
         <aside class="hero__visual">
-          <img
+          <NuxtImg
             class="hero__sprinter-image"
             src="/hero-sprinter-custom.png"
             alt="Грузовой Mercedes Sprinter"
@@ -396,3 +396,5 @@ function onSubmit() {
   }
 }
 </style>
+
+

@@ -53,7 +53,7 @@
       <div class="header__container">
         <a class="header__logo" href="/">
           <span class="header__logo-icon">
-            <img class="header__logo-image" src="/gruzly-logo.png" alt="Gruzly" />
+            <NuxtImg class="header__logo-image" src="/gruzly-logo.png" alt="Gruzly" loading="lazy" />
           </span>
         </a>
 
@@ -514,3 +514,4 @@ body {
   padding: 0;
 }
 </style>
+

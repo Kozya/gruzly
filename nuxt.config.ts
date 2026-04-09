@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false }, // На продакшене девтулзы лучше отключать
 
   // Если на лендинге много картинок, рекомендую добавить этот модуль
-  // modules: ['@nuxt/image'],
+  modules: ['@nuxt/image'],
   future: {
     compatibilityVersion: 4,
   },
@@ -37,3 +37,4 @@ export default defineNuxtConfig({
     }
   }
 })
+

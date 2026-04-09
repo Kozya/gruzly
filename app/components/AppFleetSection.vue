@@ -32,7 +32,7 @@
         :aria-labelledby="`fleet-tab-${tabs[activeTab].id}`"
       >
         <div class="fleet__visual">
-          <img :src="tabs[activeTab].image" :alt="tabs[activeTab].name" loading="lazy" />
+          <NuxtImg :src="tabs[activeTab].image" :alt="tabs[activeTab].name" loading="lazy" />
         </div>
 
         <div class="fleet__content">
@@ -302,3 +302,4 @@ const tabs = [
   }
 }
 </style>
+

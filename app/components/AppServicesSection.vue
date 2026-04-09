@@ -8,7 +8,7 @@
       <div class="services__grid">
         <article v-for="service in visibleServices" :key="service.title" class="services__card">
           <div class="services__card-title">
-            <img class="services__icon" :src="service.icon" alt="" loading="lazy" />
+            <NuxtImg class="services__icon" :src="service.icon" alt="" loading="lazy" />
             <h3>{{ service.title }}</h3>
           </div>
 
@@ -272,3 +272,4 @@ const visibleServices = computed(() => {
   }
 }
 </style>
+
