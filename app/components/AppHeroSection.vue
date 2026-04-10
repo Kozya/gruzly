@@ -274,7 +274,7 @@ function onSubmit() {
     line-height: 1.22;
     font-weight: 800;
     color: @color-dark;
-    text-align: center;
+    text-align: left;
   }
 
   &__grid {
@@ -285,7 +285,7 @@ function onSubmit() {
 
   &__card {
     background: #fff;
-    border: 1px solid rgba(0, 34, 70, 0.08);
+    border: 1px solid rgba(255, 103, 83, 0.35);
     border-radius: 12px;
     padding: 16px;
     color: #253444;

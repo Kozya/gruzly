@@ -14,7 +14,7 @@
 
           <p class="services__text">{{ service.description }}</p>
 
-          <a class="services__cta" href="tel:+380982304083">Узнать стоимость доставки</a>
+          <button class="services__cta" type="button" @click="openRequestModal('services')">Узнать стоимость доставки</button>
         </article>
       </div>
 
@@ -30,6 +30,7 @@
 <script setup lang="ts">
 const initialCount = 6
 const expanded = ref(false)
+const { openRequestModal } = useRequestModal()
 
 const services = [
   {
@@ -133,11 +134,13 @@ const visibleServices = computed(() => {
   }
 
   &__head {
-    margin: 0 0 20px;
+    max-width: 900px;
+    margin: 0 0 24px;
+    text-align: left;
   }
 
   &__title {
-    margin: 0;
+    margin: 0 0 12px;
     font-size: 34px;
     font-weight: 800;
     color: @color-dark;
@@ -154,7 +157,7 @@ const visibleServices = computed(() => {
     flex-direction: column;
     min-height: 100%;
     background: #fff;
-    border: 1px solid rgba(0, 34, 70, 0.08);
+    border: 1px solid rgba(255, 103, 83, 0.35);
     border-radius: 12px;
     padding: 18px;
     box-shadow: 0 7px 16px rgba(0, 34, 70, 0.06);
@@ -193,7 +196,9 @@ const visibleServices = computed(() => {
     margin-top: auto;
     width: fit-content;
     text-decoration: none;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
     background: linear-gradient(90deg, #ff6753 0.26%, #ff8f50 99.7%);
     color: #fff;
     font-size: 14px;

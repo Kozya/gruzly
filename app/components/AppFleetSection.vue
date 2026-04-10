@@ -46,7 +46,7 @@
             </li>
           </ul>
 
-          <a class="fleet__cta" href="tel:+380982304083">Заказать авто</a>
+          <button class="fleet__cta" type="button" @click="openRequestModal('fleet')">Заказать авто</button>
         </div>
       </article>
     </div>
@@ -55,6 +55,7 @@
 
 <script setup lang="ts">
 const activeTab = ref(0)
+const { openRequestModal } = useRequestModal()
 
 const tabs = [
   {
@@ -115,8 +116,8 @@ const tabs = [
 
   &__head {
     max-width: 900px;
-    margin: 0 auto 24px;
-    text-align: center;
+    margin: 0 0 24px;
+    text-align: left;
   }
 
   &__title {
@@ -223,6 +224,7 @@ const tabs = [
     margin-top: auto;
     width: 220px;
     height: 45px;
+    border: none;
     border-radius: 8px;
     background: linear-gradient(90deg, #ff6753 0.26%, #ff8f50 99.7%);
     color: #fff;
@@ -232,6 +234,7 @@ const tabs = [
     justify-content: center;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
     box-shadow: 0 3px 12px rgba(255, 103, 83, 0.35);
     opacity: 0.93;
     transition: opacity @transition, box-shadow @transition;

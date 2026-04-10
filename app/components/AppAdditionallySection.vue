@@ -41,11 +41,13 @@
   }
 
   &__head {
-    margin: 0 0 20px;
+    max-width: 900px;
+    margin: 0 0 24px;
+    text-align: left;
   }
 
   &__title {
-    margin: 0;
+    margin: 0 0 12px;
     font-size: 34px;
     font-weight: 800;
     color: @color-dark;
@@ -59,7 +61,7 @@
 
   &__card {
     background: #fff;
-    border: 1px solid rgba(0, 34, 70, 0.08);
+    border: 1px solid rgba(255, 103, 83, 0.35);
     border-radius: 12px;
     padding: 18px;
     box-shadow: 0 7px 16px rgba(0, 34, 70, 0.06);

@@ -63,7 +63,7 @@
               <a class="header__nav-link" href="#services">Услуги</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#warranty">Гарантии</a>
+              <a class="header__nav-link" href="#guarantees">Гарантии</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="#calculation">Расчет стоимости</a>
@@ -72,20 +72,20 @@
               <a class="header__nav-link" href="#about">О компании</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#advantage">Преимущества</a>
+              <a class="header__nav-link" href="#trust">Преимущества</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="#impossible">Задачи</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#contacts">Контакты</a>
+              <a class="header__nav-link" href="#footer">Контакты</a>
             </li>
           </ul>
         </nav>
 
-        <a class="header__cta" href="tel:+380982304083">
+        <button class="header__cta" type="button" @click="openRequestModal('header')">
           Заказать звонок
-        </a>
+        </button>
 
         <button class="header__burger" aria-label="Открыть меню" @click="toggleMenu">
           <span class="header__burger-line"></span>
@@ -130,6 +130,7 @@
 
 <script setup lang="ts">
 const menuOpen = ref(false)
+const { openRequestModal } = useRequestModal()
 
 function toggleMenu() {
   menuOpen.value = !menuOpen.value
@@ -358,6 +359,8 @@ function closeMenu() {
     font-weight: 700;
     border-radius: 8px;
     white-space: nowrap;
+    border: none;
+    cursor: pointer;
     opacity: 0.9;
     overflow: hidden;
     transition: opacity 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
@@ -514,4 +517,3 @@ body {
   padding: 0;
 }
 </style>
-

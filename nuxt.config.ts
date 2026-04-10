@@ -26,6 +26,15 @@ export default defineNuxtConfig({
     compressPublicAssets: true,
   },
 
+  runtimeConfig: {
+    public: {
+      emailjsServiceId: process.env.NUXT_PUBLIC_EMAILJS_SERVICE_ID,
+      emailjsTemplateId: process.env.NUXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+      emailjsPublicKey: process.env.NUXT_PUBLIC_EMAILJS_PUBLIC_KEY,
+      leadToEmail: process.env.NUXT_PUBLIC_LEAD_TO_EMAIL || 'darthkozya@gmail.com',
+    },
+  },
+
   app: {
     head: {
       title: 'SEO лендинга',
