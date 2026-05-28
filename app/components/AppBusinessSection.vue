@@ -308,6 +308,10 @@ function onSubmit() {
       min-height: 0;
     }
 
+    &__image{
+      display: none;
+    }
+
     &__form-wrap {
       padding: 14px;
     }
