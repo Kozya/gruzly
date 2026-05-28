@@ -4,7 +4,7 @@
       <div class="delivery-calc__panel">
         <div class="delivery-calc__content">
           <p class="delivery-calc__preline">Качество и пунктуальность, проверенные временем</p>
-          <p class="delivery-calc__preline">Грузовое такси «GRYZLY»</p>
+          <p class="delivery-calc__preline">Грузовое такси «GRUZLY»</p>
 
           <header class="delivery-calc__head">
             <h2 class="delivery-calc__title">У вас есть груз, который нужно доставить?</h2>
@@ -28,7 +28,7 @@
         <aside class="delivery-calc__form-wrap">
           <div class="delivery-calc__form-title">
             <p>Все просто</p>
-            <h3>Рассчитайте свою перевозку по Днепру</h3>
+            <h3>Рассчитайте свою перевозку по Днепру и всей Украине</h3>
           </div>
 
           <form class="delivery-calc__form" @submit.prevent="onSubmit">

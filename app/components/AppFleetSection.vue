@@ -2,7 +2,7 @@
   <section class="fleet" id="fleet">
     <div class="fleet__container">
       <header class="fleet__head">
-        <h2 class="fleet__title">Автопарк в грузовом такси «GRYZLY»</h2>
+        <h2 class="fleet__title">Автопарк в грузовом такси «GRUZLY»</h2>
         <p class="fleet__intro">
           В нашем автопарке действуют прозрачные фиксированные тарифы. Выберите тип автомобиля во вкладках
           ниже и посмотрите, какой вариант лучше подойдет под ваш груз.
@@ -69,7 +69,7 @@ const tabs = [
       'Закрытый кузов для защиты хрупких вещей',
       'Удобен для перевозки крупногабаритных предметов'
     ],
-    image: '/bus.jpg'
+    image: '/fleet-vans.png'
   },
   {
     id: 'gazelles',
@@ -82,7 +82,7 @@ const tabs = [
       'Боковая и задняя загрузка',
       'Усиленные крепления для надежной фиксации'
     ],
-    image: '/gazelle.jpg'
+    image: '/fleet-gazelles.png'
   },
   {
     id: 'trucks',
@@ -95,7 +95,7 @@ const tabs = [
       'Высокий кузов для объемного груза',
       'Идеален для регулярных перевозок по городу и области'
     ],
-    image: '/5-tonnik.jpg'
+    image: '/fleet-trucks.png'
   }
 ]
 </script>

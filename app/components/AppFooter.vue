@@ -16,8 +16,7 @@
           </div>
 
           <div class="footer__right">
-            <a href="tel:+380967171371" class="footer__phone">+38 (096) 71-71-371</a>
-            <a href="tel:+380507171371" class="footer__phone">+38 (050) 71-71-371</a>
+            <a href="tel:+380938474810" class="footer__phone">+38 (093) 847-48-10</a>
           </div>
         </div>
       </div>

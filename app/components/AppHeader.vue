@@ -4,24 +4,15 @@
     <div class="header__top">
       <div class="header__container">
         <div class="header__phones">
-          <a class="header__phone" href="tel:+380982304083">
+          <a class="header__phone" href="tel:+380938474810">
             <span class="header__phone-icon">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.18 21 3 13.82 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/>
               </svg>
             </span>
-            +38 098 230 40 83
-          </a>
-          <a class="header__phone" href="tel:+380660299805">
-            <span class="header__phone-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.18 21 3 13.82 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/>
-              </svg>
-            </span>
-            +38 066 029 98 05
+            +38 093 847 48 10
           </a>
         </div>
-
         <div class="header__socials">
           <a class="header__social header__social--whatsapp" href="https://wa.me/380982304083" target="_blank" rel="noopener" aria-label="WhatsApp">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">

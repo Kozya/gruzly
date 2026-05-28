@@ -1,20 +1,20 @@
 <template>
   <section class="hero">
     <div class="hero__container">
-      <div class="hero__grid">
+      <div class="hero__panel">
         <div class="hero__content">
           <h1 class="hero__title">
-            ГРУЗОВОЕ ТАКСИ GRYZLY
+            ГРУЗОВОЕ ТАКСИ GRUZLY
             <br />
-            доступные грузовые перевозки ДНЕПР
+            доступные грузовые перевозки ДНЕПР и вся Украина
           </h1>
-          <p class="hero__subtitle">По Днепру и Днепропетровской области</p>
+          <p class="hero__subtitle">По всей Украине</p>
 
           <ul class="hero__list">
             <li>Рассчитаем стоимость перевозки бесплатно и заранее.</li>
-            <li>Машина приезжает в среднем за 30 минут, работаем быстро и четко по Днепру.</li>
+            <li>Машина приезжает в среднем за 30 минут, работаем быстро и четко.</li>
             <li>Всегда вежливые водитель и грузчики. Без вредных привычек.</li>
-            <li>Перевозим аккуратно и несем полную материальную ответственность за груз.</li>
+            <li>Перевозим аккуратно, при необходимости упакуем и надежно зафиксируем груз.</li>
           </ul>
 
           <aside class="hero__form-wrap">
@@ -34,16 +34,6 @@
             <p v-if="submitted" class="hero__note">Заявка принята. Мы перезвоним в ближайшее время.</p>
           </aside>
         </div>
-
-        <aside class="hero__visual">
-          <NuxtImg
-            class="hero__sprinter-image"
-            src="/hero-sprinter-custom.png"
-            alt="Грузовой Mercedes Sprinter"
-            loading="lazy"
-          />
-          <div class="hero__image-badge">Подача авто за 30 минут</div>
-        </aside>
       </div>
     </div>
 
@@ -65,11 +55,8 @@
           </article>
 
           <article class="delivery__card">
-            <ul class="delivery__list">
-              <li><strong>Шевченковский</strong></li>
-              <li><strong>Из Днепра по области</strong></li>
-              <li><strong>По Днепру</strong></li>
-            </ul>
+            <h3>Работаем по всей Украине</h3>
+            <p>Организуем грузовые перевозки в любой город Украины и обратно.</p>
           </article>
 
           <article class="delivery__card delivery__card--highlight">
@@ -126,11 +113,25 @@ function onSubmit() {
     padding: 0 20px;
   }
 
-  &__grid {
+  &__panel {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
-    gap: 28px;
-    align-items: start;
+    grid-template-columns: minmax(0, 1fr) 390px;
+    gap: 24px;
+    align-items: end;
+    min-height: 560px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 34px;
+    overflow: hidden;
+    background:
+      linear-gradient(104deg, rgba(0, 34, 70, 0.94) 0%, rgba(0, 34, 70, 0.86) 47%, rgba(0, 34, 70, 0.38) 100%),
+      url('/hero-movers-smiling.jpg') 78% 35% / cover no-repeat;
+    box-shadow: 0 14px 30px rgba(0, 34, 70, 0.2);
+  }
+
+  &__content {
+    color: #fff;
+    max-width: 720px;
   }
 
   &__title {
@@ -138,7 +139,7 @@ function onSubmit() {
     font-size: 38px;
     line-height: 1.16;
     font-weight: 800;
-    color: @color-dark;
+    color: #fff;
     text-transform: uppercase;
     max-width: 760px;
   }
@@ -146,7 +147,7 @@ function onSubmit() {
   &__subtitle {
     margin: 0 0 20px;
     font-size: 20px;
-    color: @color-primary;
+    color: #bfe6ff;
     font-weight: 600;
   }
 
@@ -155,52 +156,20 @@ function onSubmit() {
     padding: 0 0 0 20px;
     display: grid;
     gap: 10px;
-    color: #2f3c4a;
+    color: #edf7ff;
     font-size: 16px;
     line-height: 1.45;
+    max-width: 640px;
   }
 
   &__form-wrap {
-    margin-top: 18px;
-    background: linear-gradient(135deg, #ffffff 0%, #f6fbff 100%);
+    margin-top: 24px;
+    max-width: 620px;
+    background: rgba(255, 255, 255, 0.96);
     border: 1px solid rgba(0, 185, 255, 0.2);
-    border-radius: 14px;
+    border-radius: 12px;
     padding: 18px;
     box-shadow: 0 10px 26px rgba(0, 34, 70, 0.08);
-  }
-
-  &__visual {
-    position: relative;
-    background: #ffffff;
-    border-radius: 16px;
-    padding: 0;
-    box-shadow: 0 14px 30px rgba(7, 33, 67, 0.16);
-    align-self: stretch;
-    overflow: hidden;
-  }
-
-  &__sprinter-image {
-    display: block;
-    width: 100%;
-    height: 100%;
-    min-height: 360px;
-    object-fit: cover;
-    object-position: 15% center;
-    border-radius: 16px;
-  }
-
-  &__image-badge {
-    position: absolute;
-    left: 20px;
-    bottom: 20px;
-    background: rgba(11, 28, 48, 0.78);
-    backdrop-filter: blur(4px);
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 999px;
-    padding: 10px 14px;
   }
 
   &__form-title {
@@ -322,8 +291,12 @@ function onSubmit() {
 
 @media (max-width: 1024px) {
   .hero {
-    &__grid {
+    &__panel {
       grid-template-columns: 1fr;
+      min-height: 0;
+      background:
+        linear-gradient(180deg, rgba(0, 34, 70, 0.9) 0%, rgba(0, 34, 70, 0.78) 100%),
+        url('/hero-movers-smiling.jpg') center / cover no-repeat;
     }
 
     &__form {
@@ -359,26 +332,13 @@ function onSubmit() {
       font-size: 17px;
     }
 
+    &__panel {
+      padding: 18px;
+      border-radius: 12px;
+    }
+
     &__form-wrap {
       padding: 16px;
-    }
-
-    &__sprinter-image {
-      min-height: 220px;
-    }
-
-    &__image-badge {
-      left: 14px;
-      bottom: 14px;
-      font-size: 12px;
-      padding: 8px 12px;
-    }
-
-    &__plate {
-      left: 58px;
-      bottom: 82px;
-      font-size: 11px;
-      padding: 2px 8px;
     }
   }
 
