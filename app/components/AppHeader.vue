@@ -111,8 +111,7 @@
           </li>
         </ul>
         <div class="header__mobile-phones">
-          <a class="header__mobile-phone" href="tel:+380982304083">+38 098 230 40 83</a>
-          <a class="header__mobile-phone" href="tel:+380660299805">+38 066 029 98 05</a>
+          <a class="header__mobile-phone" href="tel:+380938474810">+38 093 847 48 10</a>
         </div>
       </div>
     </div>
