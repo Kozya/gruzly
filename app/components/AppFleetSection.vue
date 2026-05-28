@@ -26,22 +26,25 @@
       </div>
 
       <article
+        v-for="(tab, index) in tabs"
+        :key="tab.id"
+        v-show="activeTab === index"
         class="fleet__panel"
         role="tabpanel"
-        :id="`fleet-panel-${tabs[activeTab].id}`"
-        :aria-labelledby="`fleet-tab-${tabs[activeTab].id}`"
+        :id="`fleet-panel-${tab.id}`"
+        :aria-labelledby="`fleet-tab-${tab.id}`"
       >
         <div class="fleet__visual">
-          <NuxtImg :src="tabs[activeTab].image" :alt="tabs[activeTab].name" loading="lazy" />
+          <NuxtImg :src="tab.image" :alt="tab.name" />
         </div>
 
         <div class="fleet__content">
-          <p class="fleet__name">{{ tabs[activeTab].name }}</p>
-          <p class="fleet__capacity">{{ tabs[activeTab].capacity }}</p>
-          <p class="fleet__description">{{ tabs[activeTab].description }}</p>
+          <p class="fleet__name">{{ tab.name }}</p>
+          <p class="fleet__capacity">{{ tab.capacity }}</p>
+          <p class="fleet__description">{{ tab.description }}</p>
 
           <ul class="fleet__features">
-            <li v-for="feature in tabs[activeTab].features" :key="feature">
+            <li v-for="feature in tab.features" :key="feature">
               {{ feature }}
             </li>
           </ul>
